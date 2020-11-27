@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="heading">
+        <h1><span id="temp-current" class="temp-value">0</span>°<span class="unit">C</span><span id="pipe"> | </span><span id="toggle">F</span></h1>
+        <h2><span id="weather">--</span></h2>
+        <p><span id="description">--</span></p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2 class="card-text">feels like</h2>
+            <p class="card-text"><span id="temp-feels-like" class="temp-value">0</span>°<span class="unit">C</span></p>
+        </div>
+        <div class="card">
+            <h2 class="card-text">high</h2>
+            <p class="card-text"><span id="temp-high" class="temp-value">0</span>°<span class="unit">C</span></p>
+        </div>
+        <div class="card">
+            <h2 class="card-text">low</h2>
+            <p class="card-text"><span id="temp-low" class="temp-value">0</span>°<span class="unit">C</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

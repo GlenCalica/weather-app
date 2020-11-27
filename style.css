@@ -1,0 +1,81 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --white: #ffffff;
+  --black: #353535;
+  --no-margin: 0;
+  --medium-margin: 30px;
+  --large-margin: 100px;
+  --vertical-margin: 50px 0;
+
+  background-color: var(--black);
+}
+
+* {
+  font-weight: normal;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 5rem;
+  margin: var(--no-margin);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#toggle,
+#pipe {
+  font-size: 1.5rem;
+}
+
+#fahrenheit-toggle {
+  cursor: pointer;
+}
+
+.heading {
+  text-align: center;
+  margin: var(--large-margin);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: var(--large-margin);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 250px;
+  width: 250px;
+  border-radius: 35%;
+  border-style: solid;
+  border: 2px;
+  margin: var(--medium-margin);
+  box-shadow: 5px 5px 30px -10px #000000, -5px -5px 30px -10px #6b6b6b;
+}
+
+.card-text {
+  margin: var(--no-margin);
+}
+
+@media only screen and (max-width: 450px) {
+  .card {
+    margin: var(--vertical-margin);
+  }
+  .container {
+    margin: var(--no-margin);
+  }
+  .heading {
+    margin: var(--no-margin);
+  }
+}
